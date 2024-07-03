@@ -160,10 +160,11 @@ h1 span {
     cursor: pointer;
 }
 
-.card a :hover{
+.card a :hover {
     background: transparent;
-    border:4px solid #0137be;
+    border: 4px solid #0137be;
 }
+
 footer {
     background: black;
     height: 200px;
@@ -197,7 +198,68 @@ footer p {
     background: #0137be;
     border-radius: 50%;
 }
-.links a :hover{
+
+.links a :hover {
     background: white;
     border: 4px solid #0137be;
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .content-home nav h3 , li{
+        font-size: 20px;
+        margin-right: 4px;
+
+    }
+
+    .content-principal,
+    .content-discrition {
+        flex-direction: column;
+    }
+
+    .name-home h1,
+    .projects h4 {
+        margin-top: 50px;
+        font-size: 30px;
+    }
+
+    .img-home img {
+        height: 300px;
+    }
+
+    .content-discrition img {
+        height: 300px;
+    }
+
+    .discrition
+    {
+
+    font-size: 20px;
+    max-width: 300px;
+
+}
+
+.projects{
+    height: auto;
+}
+.card-content{    
+    flex-direction: column;
+    align-items: center;}
+.card{
+    width: 300px;
+    margin-left: 15px;
+    height: 150px;  
+    margin-bottom: 15px;   
+}
+.card p{
+    display: none;
+}
+footer{
+    height: 100px;
+flex-direction: row;
+}
 }
