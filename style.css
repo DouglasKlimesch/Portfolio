@@ -262,4 +262,14 @@ footer{
     height: 100px;
 flex-direction: row;
 }
+footer h5  {
+    display: none;
+}
+.links{
+    gap: 10px;
+}
+.links a img {
+    height: 30px;
+
+}
 }
