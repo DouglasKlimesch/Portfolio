@@ -14,84 +14,194 @@
 <body>
     <div class="content-home" id="home">
         <div class="play-backgroud">
-            <video src="./assets/space-science-hud.1920x1080.mp4" autoplay  loop muted></video> 
+            <video src="./assets/space-science-hud.1920x1080.mp4" autoplay loop muted></video>
         </div>
-        <nav>
-            <h3>Portfo<span>lio</span></h3>
-            <ul>
-                <li><a class="li-home" href="#home">Home</a></li>
-                <li><a class="li-home" href="#sobre">Sobre mim </a></li>
-                <li><a class="li-home" href="#projetos">Projetos</a></li>
-                <li><a class="li-home" href="#contato">Contatos</a></li>
-            </ul>
-        </nav>
+        <div class="mascara-backgroud"></div>
+        <div class="mascara-form" onclick="sairformulario()"></div>
+
+        <div class="border-img">
+            <img class="img-home" src="./assets/Dk logo.png" alt="logo">
+        </div>
+        <a href="" class="whatsapp">
+            <img src="./assets/whatsapp.png" alt=" link para whatsapp">
+        </a>
+        <form id="form" class="form">
+            <div id="scroll-form">
+                <div class="form-information">
+                    <div id=element-check>
+                        <p>Selecione a opção desejada :</p>
+                    </div>
+                    <div style="border-radius :10px; border: 1px solid black; padding-left: 5px; padding-bottom: 5px;">
+
+                        <input type="checkbox" class="checkbox">
+                        <h5>Landing Page</h5>
+                        <p> <span>O que é:</span>
+                            Uma página única focada em apresentar um resumo da empresa.
+                            <br>
+                            <span> Função:</span>
+                            Fornecer informações essenciais sobre a empresa, incluindo contato, serviços e produtos, de
+                            maneira
+                            concisa e direta.
+                            <br>
+                            <span> Nº de Páginas:</span> 1 página
+                        </p>
+                    </div>
+
+
+                    <div style="border-radius :10px; border: 1px solid black; padding-left: 5px;padding-bottom: 5px;">
+                        <input type="checkbox" class="checkbox">
+                        <h5>Site Institucional</h5>
+                        <p><span>O que é:</span>
+                            Um website que representa uma empresa ou organização.
+                            <br>
+                            <span> Função:</span>
+                            Fornecer informações detalhadas sobre a empresa, seus serviços, produtos, missão, visão e
+                            valores,
+                            além de estabelecer credibilidade e facilitar o contato com o público.
+                            <br>
+                            <span> Nº de Páginas:</span> Múltiplas páginas (ex.: Home, Sobre, Serviços, Contato)
+                        </p>
+                    </div>
+                </div>
+                <div class="container-form">
+                    <h4>Descreva o site que você deseja.</h4>
+                    <div class=" input-form">
+                        <label for=""> Nome da sua empresa: <span>*</span></label>
+                        <input type="text" placeholder=" Nome da sua empresa">
+                    </div>
+                    <div class=" input-form">
+                        <label for="">Seu nome: <span>*</span></label>
+                        <input type="text" placeholder="Seu nome ">
+                    </div>
+                    <div class=" input-form">
+                        <label for="">E-mail: <span>*</span></label>
+                        <input type="email" placeholder="E-mail">
+                    </div>
+                    <div class=" input-form">
+                        <label for="">Nicho: <span>*</span> </label>
+                        <input type="text" placeholder="Sua area de atuação">
+                    </div>
+                    <div class=" input-form">
+                        <label for="">Descrição: <span>*</span></label>
+                        <textarea id="message" name="message"
+                            placeholder="Descreva sobre oque você gostaria de incluir em seu site"></textarea>
+
+                    </div>
+                </div>
+            </div>
+
+            <button id="button-form" type="submit"> ENVIAR </button>
+
+        </form>
+
         <div class="content-principal">
             <div class="name-home">
-                <h1>Douglas <span>Klimesch</span></h1>
-                <p>Programador Front End</p>
+                <h1>Construímos sites de alta qualidade para você.</h1>
+
+            </div>
+            <div class="paragriph-home">
+                <p>Descubra aqui a visibilidade na internet que <br> sua <span>empresa</span>, <span> marca</span> ou
+                    <span> <br>
+                        você</span> necessitam!
+                </p>
             </div>
 
 
-            <div class="border-img">
-                <img   class="img-home" src="./assets/DK logo.png" alt="logo">
-            </div>
+
+
         </div>
 
     </div>
     <section>
-        <div class="content-discrition" id="sobre">
-                <div class="discrition">
-                <h3>Sobre mim </h3>
-                <p>Sou um programador da área de Front-End. apaixonado pela tecnologia, dedicado e comprometido com cada um dos projetos que produzo, 
+        <div class="element-service">
+            <div class="element-descrition-service">
+                <h3>Porque preciso de um site ?</h3>
+                <p> Já ouviu a expressão "Hoje em dia, se você não está na internet, você está invisível"? No mundo
+                    atual,
+                    muitas pessoas preferem e confiam mais em empresas que possuem uma página na web. Ter um site
+                    objetivo e
+                    atrativo transmite segurança, qualidade e clareza.
+                    <br>
+                    Desenvolvemos o seu site exatamente como você sempre sonhou, com um acompanhamento personalizado e
+                    individualizado. Nosso objetivo é criar um site atrativo, personalizado e acessível em qualquer
+                    dispositivo.
 
-                    Atualmente autuo como Freelancer Front-end. e sou estudante de programação no DevClub sempre aprimorando os conhecimentos rumo ao Full Stack. <br> 
-                    
-                    Estou aprendendo e adquirindo experiência na criação de vários tipos de websites, atendendo uma variedade de clientes em diferentes setores.  
-                    
-                    Sempre comprometido em fornecer soluções tecnológicas eficazes e personalizadas que impulsionam o sucesso dos clientes. <br>
-                    
-                    Na jornada como freelancer, aprimorei minhas habilidades em HTML, CSS, Javascript ,React . Com o objetivo principal de entregar projetos de alta qualidade, 
-                    
-                    superando as expectativas dos clientes.   
+                    <br>
+                    <br>
+                    <span>Então, o que está esperando para transformar a visibilidade do seu site em clientes?</span>
+
                 </p>
+                <button class="element-descrition-service-button" onclick="cliquei()"> SOLICITAR ORÇAMENTO </button>
             </div>
         </div>
     </section>
+
     <section class="projects">
         <div id="projetos">
             <h4>Projetos</h4>
 
         </div>
         <div class="card-content">
-            <div class="card">
-                <img class="imgprojects" src="./assets/logo-projeto-Devburguer.png" alt="">
-                <h5>Carrinho <br> Dev Burgue DK</h5>
-                <p> Projeto desenvolvido com HTML,CSS e JS. Simulando um carrinho com pedidos feitos de uma Hamburgueria
+            <div class="card" style="--delay:1s">
+
+                <img class="imgprojects" src="./assets/projects-devburguer.png" alt="">
+
+                <div class="button-projects">
+                    <a href="https://dev-burguerdk.netlify.app" target="_blank">Ver Projeto</a>
+                </div>
+            </div>
+            <div class="card" style="--delay:6s">
+
+                <img class="imgprojects" src="assets/projects-jokenpo..png" alt="">
+
+                <div class="button-projects">
+                    <a href="https://jokenpo-dk.netlify.app" target="_blank">Ver Projeto</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-content ">
+
+            <div class="card , reverse " id="reverse" style="--delay:1s">
+
+                <img class="imgprojects" src="./assets/projects-joias.png" alt="">
+
+                <div class="button-projects">
+                    <a href="https://lojadejoiasdk.netlify.app/" target="_blank">Ver Projeto</a>
+                </div>
+            </div>
+            <div class="card , reverse" style="--delay:6s">
+
+                <img class="imgprojects" src="./assets/projects-studio.png" alt="">
+
+
+                <div class="button-projects">
+                    <a href="https://studiotatuagemdk.netlify.app/" target="_blank">Ver Projeto</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="content-discrition" id="sobre">
+            <div class="discrition">
+                <h3>Sobre Nós</h3>
+                <p> Desenvolvedores Front-End apaixonados por tecnologia <br>
+                    Somos uma equipe de desenvolvedores front-end dedicados e comprometidos com cada projeto que
+                    produzimos. Atualmente, atuamos como freelancers na
+                    área de front-end e estamos sempre em busca de aprimorar nossos conhecimentos rumo ao Full Stack.
+                    <br>
+                    Temos experiência na criação de diversos tipos de websites, atendendo clientes em diferentes
+                    setores. Estamos sempre comprometidos em fornecer soluções tecnológicas eficazes e personalizadas
+                    que impulsionam o sucesso dos nossos clientes. Ao longo da nossa jornada como freelancers,
+                    aprimoramos nossas habilidades em HTML, CSS, JavaScript e React, com o objetivo principal de
+                    entregar projetos de alta qualidade e superar as expectativas dos clientes.
                 </p>
-                <a href="https://dev-burguerdk.netlify.app" target="_blank">Ver Projeto</a>
-
-
-            </div>
-            <div class="card">
-                <img class="imgprojects" src="assets/logo-projeto-jokenpo.png" alt="">
-                <h5>JokenPô</h5>
-                <p>Projeto JokenPô desenvolvido com HTML,CSS,JS. Jogo JokenPô famoso pedra,papel e tesoura. Um dos jogos
-                    mais usados tanto por diversão quanto para aquele desempate em multiplas situaçoes na vida </p>
-                <a href="https://jokenpo-dk.netlify.app" target="_blank">Ver Projeto</a>
-
-
-            </div>
-            <div class="card">
-                <img class="imgprojects" src="./assets/logo-projeto-loja-joias.png" alt="">
-                <h5>Loja de Joias</h5>
-                <p>Projeto de landing page para loja de Joias desenvolvido com HTML E CSS . Uma landing page clean com o
-                    objetivo de ressaltar as Joias </p>
-                <a href="https://lojadejoiasdk.netlify.app/" target="_blank">Ver Projeto</a>
-
-
             </div>
         </div>
     </section>
+
     <footer id="contato">
 
         <h5>Douglas Klimesch</h5>
@@ -105,5 +215,6 @@
     </footer>
 
 </body>
+<script src="scripts.js"></script>
 
 </html>
