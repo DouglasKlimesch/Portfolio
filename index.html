@@ -22,96 +22,167 @@
         <div class="border-img">
             <img class="img-home" src="./assets/Dk logo.png" alt="logo">
         </div>
-        <a href="" class="whatsapp">
+       <!-- <a href="https://wa.me/5548988171020?text=Ol%C3%A1%20!%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20"
+            class="whatsapp">
             <img src="./assets/whatsapp.png" alt=" link para whatsapp">
-        </a>
-        <form id="form" class="form">
-            <div id="scroll-form">
-                <div class="form-information">
-                    <div id=element-check>
-                        <p>Selecione a opção desejada :</p>
-                    </div>
-                    <div style="border-radius :10px; border: 1px solid black; padding-left: 5px; padding-bottom: 5px;">
-
-                        <input type="checkbox" class="checkbox">
-                        <h5>Landing Page</h5>
-                        <p> <span>O que é:</span>
-                            Uma página única focada em apresentar um resumo da empresa.
-                            <br>
-                            <span> Função:</span>
-                            Fornecer informações essenciais sobre a empresa, incluindo contato, serviços e produtos, de
-                            maneira
-                            concisa e direta.
-                            <br>
-                            <span> Nº de Páginas:</span> 1 página
-                        </p>
+        </a> -->
+        <form class="form" id="my-form" action="https://formspree.io/f/mwpebbbq" method="POST">            <div id="scroll-form">
+            </div>
+            <div class="container-form">
+                <h4>Descreva o site que você deseja.</h4>
+                
+                <div class=" input-form">
+                    <label for=""> Selecione qual pagina deseja: <span>*</span><a href=" #information-pages" onclick="sairformulario()" ><img  src="./assets/img-inform.png" alt=" Ajuda "></a></label>
+                    <select name="select" id="">
+                        <option value=" Landing Page"> Landing Page </option>
+                        <option value="Site Istituconal"> Site Institucional </option>
+                    </select>            
                     </div>
 
-
-                    <div style="border-radius :10px; border: 1px solid black; padding-left: 5px;padding-bottom: 5px;">
-                        <input type="checkbox" class="checkbox">
-                        <h5>Site Institucional</h5>
-                        <p><span>O que é:</span>
-                            Um website que representa uma empresa ou organização.
-                            <br>
-                            <span> Função:</span>
-                            Fornecer informações detalhadas sobre a empresa, seus serviços, produtos, missão, visão e
-                            valores,
-                            além de estabelecer credibilidade e facilitar o contato com o público.
-                            <br>
-                            <span> Nº de Páginas:</span> Múltiplas páginas (ex.: Home, Sobre, Serviços, Contato)
-                        </p>
-                    </div>
+                <div class=" input-form">
+                    <label for=""> Nome da sua empresa: <span>*</span></label>
+                    <input type="text" name="empresa" placeholder=" Nome da sua empresa" autocomplete="on" >
                 </div>
-                <div class="container-form">
-                    <h4>Descreva o site que você deseja.</h4>
-                    <div class=" input-form">
-                        <label for=""> Nome da sua empresa: <span>*</span></label>
-                        <input type="text" placeholder=" Nome da sua empresa">
-                    </div>
-                    <div class=" input-form">
-                        <label for="">Seu nome: <span>*</span></label>
-                        <input type="text" placeholder="Seu nome ">
-                    </div>
-                    <div class=" input-form">
-                        <label for="">E-mail: <span>*</span></label>
-                        <input type="email" placeholder="E-mail">
-                    </div>
-                    <div class=" input-form">
-                        <label for="">Nicho: <span>*</span> </label>
-                        <input type="text" placeholder="Sua area de atuação">
-                    </div>
-                    <div class=" input-form">
-                        <label for="">Descrição: <span>*</span></label>
-                        <textarea id="message" name="message"
-                            placeholder="Descreva sobre oque você gostaria de incluir em seu site"></textarea>
+                <div class=" input-form">
+                    <label for=""> Whatsapp: <span>*</span></label>
+                    <input type="number" name="Whatsapp" placeholder=" Telefone p/contato" autocomplete="on" >
+                </div>
+                <div class=" input-form">
+                    <label for="">Seu nome: <span>*</span></label>
+                    <input type="text" name="name" placeholder="Seu nome " autocomplete="on" >
+                </div>
+                <div class=" input-form">
+                    <label for="">E-mail: <span>*</span></label>
+                    <input type="email" name="email" placeholder="E-mail" autocomplete="on" >
+                </div>
+                <div class=" input-form">
+                    <label for="">Nicho: <span>*</span> </label>
+                    <input type="text" name="nicho" placeholder="Sua area de atuação" autocomplete="on" >
+                </div>
+                <div class=" input-form">
+                    <label for="">Descrição: <span>*</span></label>
+                    <textarea id="message" name="message"
+                        placeholder="Descreva sobre oque você gostaria de incluir em seu site" ></textarea>
 
-                    </div>
                 </div>
             </div>
 
-            <button id="button-form" type="submit"> ENVIAR </button>
+
+            <button onclick="statusForm()" id="button-form" type="submit"> ENVIAR </button>
+           
 
         </form>
+    </div>
+    <div class="response-status-form">
+        <p id="my-form-status"></p>
+    </div>
 
-        <div class="content-principal">
-            <div class="name-home">
-                <h1>Construímos sites de alta qualidade para você.</h1>
+    <div class="content-principal">
+        <div class="name-home">
+            <h1>Construímos sites de alta qualidade para você.</h1>
 
+        </div>
+        <div class="paragriph-home">
+            <p>Descubra aqui a visibilidade na internet que <br> sua <span>empresa</span>, <span> marca</span> ou
+                <span> <br>
+                    você</span> necessitam!
+            </p>
+        </div>
+    </div>
+
+   
+   
+    <section class="serction-services-inform">
+
+
+
+        <div class="element-text-services-inform">
+            <div id="information">
+                <h5>Transforme seu negócio com um diferencial único</h5>
+                <p>Na D.K Developer Web, oferecemos páginas de excelência e alta conversão, desenvolvidas com
+                    tecnologia
+                    de
+                    ponta e expertise que asseguram:</p>
             </div>
-            <div class="paragriph-home">
-                <p>Descubra aqui a visibilidade na internet que <br> sua <span>empresa</span>, <span> marca</span> ou
-                    <span> <br>
-                        você</span> necessitam!
-                </p>
-            </div>
-
+            <ul class="list-service-inform">
+                <li class="list-itens"> 🚀 <b> Captar Interesse Rápido:</b> <br>
+                    Despertar o interesse pelo seu produto ou serviço em
+                    questão de
+                    minutos.
+                </li>
+                <li class="list-itens"> 🚀 <b>Destacar sua Expertise :</b> <br>
+                    Evidenciar os benefícios, resultados e diferenciais
+                    do seu negócio.
+                </li>
+                <li class="list-itens"> 🚀 <b> Exibir sua Loja Online:</b> <br>
+                    Apresentar seus produtos ou serviços na maior
+                    plataforma de vendas
+                    do
+                    mundo.
+                </li>
+                <li class="list-itens"> 🚀 <b> Promover seus Serviços:</b> <br>
+                    Divulgar seus serviços de maneira simples e eficaz.
+                </li>
+                <li class="list-itens"> 🚀<b> Aumentar a Visibilidade:</b> <br>
+                    Atrair mais visitantes para o seu negócio todos os
+                    dias.</li>
+                <li class="list-itens"> 🚀<b> Impulsionar Vendas:</b> <br>
+                    Aumentar suas vendas e garantir recorrência entre milhões
+                    de brasileiros
+                </li>
+            </ul>
+            <a onclick="cliquei()"> Quero um Orçamento !</a>
+        </div>
 
 
 
         </div>
+        <div class="element-robo-img">
+            <img src="./assets/robo-smart-img.png" alt="">
+        </div>
 
-    </div>
+    </section>
+
+    <section class="section-itens-dk" id="information-pages">
+
+        <h4> Quais Serviços 100% personalizado você encontra na D.K ? </h4>
+        
+        <div class="itens-grid">
+            <div class="grid-service">
+                <h5>Landing Page</h5>
+                <p> <span>O que é:</span>
+                    Uma página única focada em apresentar um resumo da empresa.
+                    <br>
+                    <span> Função:</span>
+                    Fornecer informações essenciais sobre a empresa, incluindo contato, serviços e produtos, de
+                    maneira
+                    concisa e direta.
+                    <br>
+                    <span> Nº de Páginas:</span> 1 página
+                </p>
+                <a onclick="cliquei()">Orçamento </a>
+            </div>
+
+            <div class="grid-service">
+                <h5>Site Institucional</h5>
+                <p><span>O que é:</span>
+                    Um website que representa uma empresa ou organização.
+                    <br>
+                    <span> Função:</span>
+                    Fornecer informações detalhadas sobre a empresa, seus serviços, produtos, missão, visão e
+                    valores,
+                    além de estabelecer credibilidade e facilitar o contato com o público.
+                    <br>
+                    <span> Nº de Páginas:</span> Múltiplas páginas (ex.: Home, Sobre, Serviços, Contato)
+
+                </p>
+                <a onclick="cliquei()">Orçamento</a>
+            </div>
+
+        </div>
+    </section>
+
+
     <section>
         <div class="element-service">
             <div class="element-descrition-service">
@@ -136,6 +207,9 @@
         </div>
     </section>
 
+
+
+   
     <section class="projects">
         <div id="projetos">
             <h4>Projetos</h4>
@@ -190,10 +264,12 @@
                 <p> Desenvolvedores Front-End apaixonados por tecnologia <br>
                     Somos uma equipe de desenvolvedores front-end dedicados e comprometidos com cada projeto que
                     produzimos. Atualmente, atuamos como freelancers na
-                    área de front-end e estamos sempre em busca de aprimorar nossos conhecimentos rumo ao Full Stack.
+                    área de front-end e estamos sempre em busca de aprimorar nossos conhecimentos rumo ao Full
+                    Stack.
                     <br>
                     Temos experiência na criação de diversos tipos de websites, atendendo clientes em diferentes
-                    setores. Estamos sempre comprometidos em fornecer soluções tecnológicas eficazes e personalizadas
+                    setores. Estamos sempre comprometidos em fornecer soluções tecnológicas eficazes e
+                    personalizadas
                     que impulsionam o sucesso dos nossos clientes. Ao longo da nossa jornada como freelancers,
                     aprimoramos nossas habilidades em HTML, CSS, JavaScript e React, com o objetivo principal de
                     entregar projetos de alta qualidade e superar as expectativas dos clientes.
