@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="imagex/png" href="./assets/Mask-group.ico" >
+    <link rel="shortcut icon" type="imagex/png" href="./assets/Mask-group.ico">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="reveal.js " defer></script>
     <title>D.K Desenvolvedor web</title>
 </head>
 
 <body>
-    
+
     <div class="content-home" id="home">
         <div class="play-backgroud">
             <video src="./assets/space-science-hud.1920x1080.mp4" autoplay loop muted></video>
@@ -24,54 +26,56 @@
         <div class="border-img">
             <img class="img-home" src="./assets/Dk logo.png" alt="logo">
         </div>
-       <!-- <a href="https://wa.me/5548988171020?text=Ol%C3%A1%20!%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20"
+        <!-- <a href="https://wa.me/5548988171020?text=Ol%C3%A1%20!%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20"
             class="whatsapp">
             <img src="./assets/whatsapp.png" alt=" link para whatsapp">
         </a> -->
-        <form class="form" id="my-form" action="https://formspree.io/f/mwpebbbq" method="POST">            <div id="scroll-form">
+        <form class="form" id="my-form" action="https://formspree.io/f/mwpebbbq" method="POST">
+            <div id="scroll-form">
             </div>
             <div class="container-form">
                 <h4>Descreva o site que você deseja.</h4>
-                
+
                 <div class=" input-form">
-                    <label for=""> Selecione qual pagina deseja: <span>*</span><a href=" #information-pages" onclick="sairformulario()" ><img  src="./assets/img-inform.png" alt=" Ajuda "></a></label>
+                    <label for=""> Selecione qual pagina deseja: <span>*</span><a href=" #information-pages"
+                            onclick="sairformulario()"><img src="./assets/img-inform.png" alt=" Ajuda "></a></label>
                     <select name="select" id="">
                         <option value=" Landing Page"> Landing Page </option>
                         <option value="Site Istituconal"> Site Institucional </option>
-                    </select>            
-                    </div>
+                    </select>
+                </div>
 
                 <div class=" input-form">
                     <label for=""> Nome da sua empresa: <span>*</span></label>
-                    <input type="text" name="empresa" placeholder=" Nome da sua empresa" autocomplete="on" >
+                    <input type="text" name="empresa" placeholder=" Nome da sua empresa" autocomplete="on">
                 </div>
                 <div class=" input-form">
                     <label for=""> Whatsapp: <span>*</span></label>
-                    <input type="number" name="Whatsapp" placeholder=" Telefone p/contato" autocomplete="on" >
+                    <input type="number" name="Whatsapp" placeholder=" Telefone p/contato" autocomplete="on">
                 </div>
                 <div class=" input-form">
                     <label for="">Seu nome: <span>*</span></label>
-                    <input type="text" name="name" placeholder="Seu nome " autocomplete="on" >
+                    <input type="text" name="name" placeholder="Seu nome " autocomplete="on">
                 </div>
                 <div class=" input-form">
                     <label for="">E-mail: <span>*</span></label>
-                    <input type="email" name="email" placeholder="E-mail" autocomplete="on" >
+                    <input type="email" name="email" placeholder="E-mail" autocomplete="on">
                 </div>
                 <div class=" input-form">
                     <label for="">Nicho: <span>*</span> </label>
-                    <input type="text" name="nicho" placeholder="Sua area de atuação" autocomplete="on" >
+                    <input type="text" name="nicho" placeholder="Sua area de atuação" autocomplete="on">
                 </div>
                 <div class=" input-form">
                     <label for="">Descrição: <span>*</span></label>
                     <textarea id="message" name="message"
-                        placeholder="Descreva sobre oque você gostaria de incluir em seu site" ></textarea>
+                        placeholder="Descreva sobre oque você gostaria de incluir em seu site"></textarea>
 
                 </div>
             </div>
 
 
             <button onclick="statusForm()" id="button-form" type="submit"> ENVIAR </button>
-           
+
 
         </form>
     </div>
@@ -92,15 +96,15 @@
         </div>
     </div>
 
-   
-   
+
+
     <section class="serction-services-inform">
 
 
 
         <div class="element-text-services-inform">
             <div id="information">
-                <h5>Transforme seu negócio com um diferencial único</h5>
+                <h5 class="titulo">Transforme seu negócio com um diferencial único</h5>
                 <p>Na D.K Developer Web, oferecemos páginas de excelência e alta conversão, desenvolvidas com
                     tecnologia
                     de
@@ -147,8 +151,8 @@
 
     <section class="section-itens-dk" id="information-pages">
 
-        <h4> Quais Serviços 100% personalizado você encontra na D.K ? </h4>
-        
+        <h4 class="titulo"> Quais Serviços 100% personalizado você encontra na D.K ? </h4>
+
         <div class="itens-grid">
             <div class="grid-service">
                 <h5>Landing Page</h5>
@@ -188,7 +192,7 @@
     <section>
         <div class="element-service">
             <div class="element-descrition-service">
-                <h3>Porque preciso de um site ?</h3>
+                <h3 class="titulo">Porque preciso de um site ?</h3>
                 <p> Já ouviu a expressão "Hoje em dia, se você não está na internet, você está invisível"? No mundo
                     atual,
                     muitas pessoas preferem e confiam mais em empresas que possuem uma página na web. Ter um site
@@ -211,58 +215,29 @@
 
 
 
-   
+
     <section class="projects">
-        <div id="projetos">
-            <h4>Projetos</h4>
+
+        <h3 class="titulo-projects">Projetos</h3>
+        <div class=" container-projects">
+            <img id="phone-projects" src="./img-port/d-k-iphone.png" alt="phone">
+            <img id="desk-projects" src="./img-port/d-k-not m.png" alt="notebook">
+            <img id="tablet-projects" src="./img-port/d-k-ipad.png" alt="tablet">
+        </div>
+        <div class="link-projects-d">
+           <button class="buttonProjects"><img class="arrow-projects" src=".//img-port/iconamoon_arrow-left-2-fill.png" alt="arrow"> </button>
+            <!-- <a class="link-projects" href="https://d-kdev.com/">Ver projeto</a> -->
+           <button  class="buttonProjects buttonProjects2"><img class="arrow-projects"  src="./img-port/iconamoon_arrow-rigth-2-fill.png" alt="arrow"></button>
+
 
         </div>
-        <div class="card-content">
-            <div class="card" style="--delay:1s">
 
-                <img class="imgprojects" src="./assets/projects-devburguer.png" alt="">
-
-                <div class="button-projects">
-                    <a href="https://dev-burguerdk.netlify.app" target="_blank">Ver Projeto</a>
-                </div>
-            </div>
-            <div class="card" style="--delay:6s">
-
-                <img class="imgprojects" src="assets/projects-jokenpo..png" alt="">
-
-                <div class="button-projects">
-                    <a href="https://jokenpo-dk.netlify.app" target="_blank">Ver Projeto</a>
-                </div>
-            </div>
-
-        </div>
-        <div class="card-content ">
-
-            <div class="card , reverse " id="reverse" style="--delay:1s">
-
-                <img class="imgprojects" src="./assets/projects-joias.png" alt="">
-
-                <div class="button-projects">
-                    <a href="https://lojadejoiasdk.netlify.app/" target="_blank">Ver Projeto</a>
-                </div>
-            </div>
-            <div class="card , reverse" style="--delay:6s">
-
-                <img class="imgprojects" src="./assets/projects-studio.png" alt="">
-
-
-                <div class="button-projects">
-                    <a href="https://studiotatuagemdk.netlify.app/" target="_blank">Ver Projeto</a>
-                </div>
-            </div>
-
-        </div>
     </section>
 
     <section>
         <div class="content-discrition" id="sobre">
             <div class="discrition">
-                <h3>Sobre Nós</h3>
+                <h3 class="titulo">Sobre Nós</h3>
                 <p> Desenvolvedores Front-End apaixonados por tecnologia <br>
                     Somos uma equipe de desenvolvedores front-end dedicados e comprometidos com cada projeto que
                     produzimos. Atualmente, atuamos como freelancers na
