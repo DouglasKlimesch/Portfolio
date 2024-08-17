@@ -34,7 +34,8 @@
     background: #2d1446;
 }
 
-.titulo-projects , .titulo {
+.titulo-projects,
+.titulo {
     visibility: hidden;
 }
 
@@ -112,11 +113,7 @@ form {
     transition: left 1s ease-in-out;
 }
 
-#scroll-form {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+
 
 .container-form {
     display: flex;
@@ -236,7 +233,7 @@ textarea {
 }
 
 .response-status-form {
-        background: linear-gradient(#f3ebebd4, #00000054) padding-box, linear-gradient(to right, #2813f7, #566bdf, #9914b8) border-box;
+    background: linear-gradient(#f3ebebd4, #00000054) padding-box, linear-gradient(to right, #2813f7, #566bdf, #9914b8) border-box;
     height: 40vh;
     width: 400px;
     background-color: white;
@@ -548,7 +545,7 @@ p span {
     align-items: center;
 }
 
-.titulo-projects{
+.titulo-projects {
     color: white;
     padding: 30px 20px 0;
     position: absolute;
@@ -566,22 +563,24 @@ p span {
     margin-top: 40px;
 }
 
-#phone-projects{
+#phone-projects {
     visibility: hidden;
-   
+
     width: 430px;
     position: absolute;
     z-index: 1;
     left: 4%;
 
 }
-#desk-projects{
+
+#desk-projects {
     visibility: hidden;
     position: absolute;
-    
+
     width: 830px;
 }
-#tablet-projects{
+
+#tablet-projects {
     visibility: hidden;
     position: absolute;
     width: 42%;
@@ -590,7 +589,8 @@ p span {
     z-index: 1;
 
 }
-.link-projects-d{
+
+.link-projects-d {
     display: flex;
     height: 76px;
     width: 100%;
@@ -602,13 +602,14 @@ p span {
     gap: 30px
 }
 
-.arrow-projects{
+.arrow-projects {
     width: 75px;
     cursor: pointer;
-   
+
 }
-.buttonProjects{
-    background-color:transparent;
+
+.buttonProjects {
+    background-color: transparent;
     border: none;
     cursor: pointer;
     z-index: 1;
@@ -617,11 +618,11 @@ p span {
 button :hover {
 
     opacity: 0.7;
-    
+
 }
 
 
-.link-projects{
+.link-projects {
     width: auto;
     height: 60px;
     background: linear-gradient(#111111, #000000) padding-box, linear-gradient(to left bottom, #0636e7, #2813f7, #7115e7fa, #8f8fa2, #080000f7, #080808, #000000f0, #000, #ffffff, #7115e7fa, #0c06ff, #0704eff2) border-box;
@@ -635,6 +636,58 @@ button :hover {
     color: #ffffff;
     padding: 0.5em 1.5em;
     cursor: pointer;
+}
+
+.projects-links {}
+
+.container-links {
+    display: none;
+    width: 100vw;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.container-links ul {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 60px;
+}
+
+.container-links ul li {
+    display: inline-grid;
+    color: white;
+    align-items: center;
+    grid-template-columns: 450px 150px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.button-links {
+    width: 116px;
+    height: 117px;
+    background: linear-gradient(#ffffff, #000000) padding-box, linear-gradient(to left bottom, #0636e7, #2813f7, #7115e7fa, #8f8fa2, #080000f7, #080808, #000000f0, #000, #ffffff, #7115e7fa, #0c06ff, #0704eff2) border-box;
+    border-radius: 100%;
+    border: 3px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+.paragriph-links {
+    width: 100%;
+    height: auto;
+    margin: 20px 0 0;
+    padding: 30px;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    background: #000000;
+    font-size: 15px;
+    font-weight: 300
 }
 
 
@@ -688,40 +741,37 @@ footer p {
 }
 
 
-@media screen and (max-width: 1300px){ 
-    .serction-services-inform{
+@media screen and (max-width: 1300px) {
+    .serction-services-inform {
         flex-direction: column;
         align-items: center;
 
-    }  
-    
-    .container-projects{
-        height: 60vh;
-    }
-    #phone-projects{
-            left: 0%;
-            width: 321px;
-            position: relative;
     }
 
-    #desk-projects{
- 
+    .container-projects {
+        height: 60vh;
+    }
+
+    #phone-projects {
+        left: 0%;
+        width: 321px;
+        position: relative;
+    }
+
+    #desk-projects {
+
         width: 646px;
 
     }
 
-    #tablet-projects{  
-          width: 470px;
-          left: 18%;
-          position: relative;
+    #tablet-projects {
+        width: 470px;
+        left: 18%;
+        position: relative;
 
     }
 }
 
-    @media screen and(max-width:1000pX){
-
-        
-    }
 
 @media screen and (max-width: 500px) {
     nav {
@@ -749,8 +799,7 @@ footer p {
     }
 
     .name-home h1,
-    h3
-    {
+    h3 {
         font-size: 35px;
         width: auto;
 
@@ -819,75 +868,6 @@ footer p {
         width: 90vw;
     }
 
-    h5 {
-        margin-top: 10px;
-        font-size: 20px;
-    }
-
-    .discrition {
-
-        font-size: 20px;
-        max-width: auto;
-
-    }
-
-    .projects {
-        
-
-    }
-    .container-projects{
-        height:424px;
-        margin-top: 0;
-    }
-
-    #phone-projects{
-        width: 600px;
-        position: relative;
-        left: 0;
-
-    }
-
-    #desk-projects{
-        width: 375px;
-        height: auto;
-    }
-
-    #tablet-projects{
-        min-width: 66%;
-    height: auto;
-    left: 11%;
-position: relative;
-    }
-    .link-projects-d{    
-        bottom: 30px;
-    }
-
-
-    
-
-
-
-    footer {
-        height: 100px;
-        flex-direction: row;
-        padding-left: 10px;
-        justify-content: flex-start;
-
-    }
-
-    footer h5 {
-        display: none;
-    }
-
-    .links {
-        gap: 10px;
-    }
-
-    .links a img {
-        height: 30px;
-
-    }
-
     .section-itens-dk {
         height: auto;
     }
@@ -936,9 +916,81 @@ position: relative;
     }
 
 
+    h5 {
+        margin-top: 10px;
+        font-size: 20px;
+    }
 
 
 
+    .container-projects {
+        height: 424px;
+        margin-top: 0;
+    }
+
+    #phone-projects {
+        width: 600px;
+        position: relative;
+        left: 0;
+
+    }
+
+    #desk-projects {
+        width: 375px;
+        height: auto;
+    }
+
+    #tablet-projects {
+        min-width: 66%;
+        height: auto;
+        left: 11%;
+        position: relative;
+    }
+
+    .link-projects-d {
+        bottom: 30px;
+    }
+
+    .container-links {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .container-links ul li {
+        grid-template-columns: auto;
+        padding: 0 20px;
+    }
+
+
+
+    .discrition {
+
+        font-size: 20px;
+        max-width: auto;
+    }
+
+    
+
+    footer {
+        height: 100px;
+        flex-direction: row;
+        padding-left: 10px;
+        justify-content: flex-start;
+
+    }
+
+    footer h5 {
+        display: none;
+    }
+
+    .links {
+        gap: 10px;
+    }
+
+    .links a img {
+        height: 30px;
+
+    }
 
 
 

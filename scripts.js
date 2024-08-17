@@ -1,6 +1,8 @@
 const form = document.querySelector(".form")
 const mascara = document.querySelector(".mascara-form")
-const containerStatus = document.querySelector (".response-status-form")
+const containerStatus = document.querySelector(".response-status-form")
+
+
 
 
 function cliquei() {
@@ -25,7 +27,9 @@ function statusForm() {
     form.style.transform = "translatex(0)"
     form.style.left = "-900px"
 
+
 }
+
 
 const formData = document.getElementById("my-form");
 
@@ -61,125 +65,116 @@ formData.addEventListener("submit", handleSubmit)
 // projetos
 const menuProjectsMac = [
 
-    './img-port/tatto-mac.png' ,
-    
-    './img-port/joias-mac.png' ,
-    
-   './img-port/jokenpo-mac.png',
-    
+    './img-port/tatto-mac.png',
+
+    './img-port/joias-mac.png',
+
+    './img-port/jokenpo-mac.png',
+
     './img-port/burguer-mac.png',
-    
+
     './img-port/d-k-mac.png'
-    
-    
-    ];
-    const menuProjectsPhone = [
 
-        './img-port/tatto-iphone.png' ,
-        
-        './img-port/joias-iphone.png' ,
-        
-       './img-port/jokenpo-iphone.png',
-        
-        './img-port/burguer-iphone.png',
-        
-        './img-port/d-k-iphone.png' 
 
-        
-        
-        ];
-        const menuProjectsTablet = [
+];
+const menuProjectsPhone = [
 
-            './img-port/tatto-ipad.png' ,
-            
-            './img-port/joias-ipad.png' ,
-            
-           './img-port/jokenpo-ipad.png',
-            
-            './img-port/burguer-ipad.png',
+    './img-port/tatto-iphone.png',
 
-            './img-port/d-k-ipad.png'
-            
-            
-            ];
+    './img-port/joias-iphone.png',
 
-            const menuHref=[
+    './img-port/jokenpo-iphone.png',
 
-                'https://jokenpo-dk.netlify.app/',
-                'https://d-k.com'
+    './img-port/burguer-iphone.png',
 
-            ]
+    './img-port/d-k-iphone.png'
+
+
+
+];
+const menuProjectsTablet = [
+
+    './img-port/tatto-ipad.png',
+
+    './img-port/joias-ipad.png',
+
+    './img-port/jokenpo-ipad.png',
+
+    './img-port/burguer-ipad.png',
+
+    './img-port/d-k-ipad.png'
+
+
+];
 
 
 
 
-            
-  const imageMac= document.getElementById('desk-projects');
-  const imagePhone= document.getElementById('phone-projects');
-  const imageTablet= document.getElementById('tablet-projects');
-  const buttonProjects=document.querySelector('.buttonProjects')
-  const  buttonProjects2 = document.querySelector('.buttonProjects2')
-  let currentImg=1;
-  let currentImgPhone=1
-  let currentImgTablet=1
 
-  setInterval(function() {
+const imageMac = document.getElementById('desk-projects');
+const imagePhone = document.getElementById('phone-projects');
+const imageTablet = document.getElementById('tablet-projects');
+const buttonProjects = document.querySelector('.buttonProjects')
+const buttonProjects2 = document.querySelector('.buttonProjects2')
+let currentImg = 1;
+let currentImgPhone = 1
+let currentImgTablet = 1
+
+setInterval(function () {
     trocar();
-       
-  },6000)
 
-  function trocar () {
-    if( currentImg == menuProjectsMac.length){
-        currentImg=0
+}, 6000)
+
+function trocar() {
+    if (currentImg == menuProjectsMac.length) {
+        currentImg = 0
     }
-   imageMac.src= menuProjectsMac[currentImg];
+    imageMac.src = menuProjectsMac[currentImg];
     currentImg++;
 
     trocarPhone()
     trocarTablet()
-    
-  
-  }  
 
-  function trocarPhone () {
-    if( currentImgPhone == menuProjectsPhone.length){
-        currentImgPhone=0
+
+}
+
+function trocarPhone() {
+    if (currentImgPhone == menuProjectsPhone.length) {
+        currentImgPhone = 0
     }
-   imagePhone.src= menuProjectsPhone[currentImgPhone];
+    imagePhone.src = menuProjectsPhone[currentImgPhone];
     currentImgPhone++;
-    
-  }
- 
 
-  function trocarTablet () {
-    if( currentImgTablet == menuProjectsTablet.length){
-        currentImgTablet=0
+}
+
+
+function trocarTablet() {
+    if (currentImgTablet == menuProjectsTablet.length) {
+        currentImgTablet = 0
     }
-   imageTablet.src= menuProjectsTablet[currentImgTablet];
+    imageTablet.src = menuProjectsTablet[currentImgTablet];
     currentImgTablet++;
-    
-  }
 
-  
+}
 
-  function changeHref() {
- const href=1
-    const link = document.querySelector('.link-projects')
+const openLinks = document.querySelector(".container-links")
+const buttonLinks = document.querySelector(".link-projects")
 
-    if (link.href == menuHref.length){
-        href=0
-    }
-    href.href=menuHref[href]
-    href++
-    console.log( href)
-  }
+buttonLinks.onclick = function () {
+    openLinks.style.display = "block";
+};
+// buttonLinks.onblur = function () {
+//     openLinks.style.display = "none";
+// };
 
 
 
 
 
-buttonProjects.addEventListener('click',trocar)
-buttonProjects2.addEventListener('click',trocar)
+
+
+buttonProjects.addEventListener('click', trocar)
+buttonProjects2.addEventListener('click', trocar)
 
 
 

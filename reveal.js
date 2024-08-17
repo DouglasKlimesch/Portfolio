@@ -3,7 +3,7 @@ window.revelar= ScrollReveal({reset:true})
 
 
 revelar.reveal('.titulo',{
-    duration:2000,
+    duration:1500,
     distance: '90px',
    
     

@@ -9,8 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="imagex/png" href="./assets/Mask-group.ico">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9KH8XG54DW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9KH8XG54DW');
+    </script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="reveal.js " defer></script>
+
     <title>D.K Desenvolvedor web</title>
 </head>
 
@@ -47,23 +56,23 @@
 
                 <div class=" input-form">
                     <label for=""> Nome da sua empresa: <span>*</span></label>
-                    <input type="text" name="empresa" placeholder=" Nome da sua empresa" autocomplete="on">
+                    <input type="text" name="empresa" placeholder=" Nome da sua empresa" autocomplete="on" required>
                 </div>
                 <div class=" input-form">
                     <label for=""> Whatsapp: <span>*</span></label>
-                    <input type="number" name="Whatsapp" placeholder=" Telefone p/contato" autocomplete="on">
+                    <input type="number" name="Whatsapp" placeholder=" Telefone p/contato" autocomplete="on" required>
                 </div>
                 <div class=" input-form">
                     <label for="">Seu nome: <span>*</span></label>
-                    <input type="text" name="name" placeholder="Seu nome " autocomplete="on">
+                    <input type="text" name="name" placeholder="Seu nome " autocomplete="on" required>
                 </div>
                 <div class=" input-form">
                     <label for="">E-mail: <span>*</span></label>
-                    <input type="email" name="email" placeholder="E-mail" autocomplete="on">
+                    <input type="email" name="email" placeholder="E-mail" autocomplete="on" required>
                 </div>
                 <div class=" input-form">
                     <label for="">Nicho: <span>*</span> </label>
-                    <input type="text" name="nicho" placeholder="Sua area de atuação" autocomplete="on">
+                    <input type="text" name="nicho" placeholder="Sua area de atuação" autocomplete="on" required>
                 </div>
                 <div class=" input-form">
                     <label for="">Descrição: <span>*</span></label>
@@ -225,13 +234,55 @@
             <img id="tablet-projects" src="./img-port/d-k-ipad.png" alt="tablet">
         </div>
         <div class="link-projects-d">
-           <button class="buttonProjects"><img class="arrow-projects" src=".//img-port/iconamoon_arrow-left-2-fill.png" alt="arrow"> </button>
-            <!-- <a class="link-projects" href="https://d-kdev.com/">Ver projeto</a> -->
-           <button  class="buttonProjects buttonProjects2"><img class="arrow-projects"  src="./img-port/iconamoon_arrow-rigth-2-fill.png" alt="arrow"></button>
+            <button class="buttonProjects"><img class="arrow-projects" src=".//img-port/iconamoon_arrow-left-2-fill.png"
+                    alt="arrow"> </button>
+            <button class="link-projects" >Ver projetos</button>
+            <button class="buttonProjects buttonProjects2"><img class="arrow-projects"
+                    src="./img-port/iconamoon_arrow-rigth-2-fill.png" alt="arrow"></button>
 
 
         </div>
 
+    </section>
+    <section class="projects-links" id="projects-links">
+        <div class="container-links">
+            <ul>
+                <li>
+                    <img class="img-projects" src="./assets/projects-joias.png" alt="Projeto Lp joalheria">
+                    <a href="https://lojadejoiasdk.netlify.app/"class="button-links" target="_blank">Ver projeto</a>
+                    <p class="paragriph-links">Landing Page projetada para destacar coleção de joias
+                        deslumbrantes e facilitar sua experiência de compra. Com um design elegante e navegação
+                        intuitiva, você encontrará coleção exclusiva, informações sobre cuidados, e formas fáceis
+                        de entrar em contato.</p>
+                </li>
+
+                <li>
+                    <img class="img-projects" src="./assets/projects-studio.png" alt="Projeto studio Tatuagem">
+                    <a href="https://studiotatuagemdk.netlify.app/" class="button-links" target="_blank">Ver projeto</a>
+                    <p class="paragriph-links" > Site Institucional projetado para atrair e converter leads, o site combina um design limpo com
+                        uma navegação clara.
+                        Com páginas de Galeria, Sobre Nós, Cuidados e Recomendações, e Contato, oferecemos uma
+                        experiência intuitiva que destaca o melhor do estúdio. Confira o resultado e veja como
+                        conseguimos unir estética e funcionalidade </p>
+                </li>
+
+                <li>
+                    <img class="img-projects" src="./assets/projects-devburguer.png"
+                        alt="Projeto Carrinho hamburgueria">
+                    <a href="https://dev-burguerdk.netlify.app/" class="button-links" target="_blank">Ver projeto</a>
+                    <p class="paragriph-links"> Descubra como um carrinho de compras simples e objetivo pode revolucionar a experiência de seus
+                        clientes online. Nosso protótipo foi projetado para facilitar a adição de itens, a visualização
+                        do pedido e a finalização da compra, tudo de maneira rápida e intuitiva.</p>
+                </li>
+                <li>
+                    <img class="img-projects" src="./assets/projects-jokenpo..png" alt="Projeto jogo Jokenpô">
+                    <a href="https://jokenpo-dk.netlify.app/" class="button-links" target="_blank">Ver projeto</a>
+                    <p class="paragriph-links" >Explore nosso site dedicado ao clássico jogo Jokenpô! Seja para se divertir ou tomar uma decisão
+                        rápida, oferecemos uma experiência simples e divertida para todos.</p>
+                </li>
+                
+            </ul>
+        </div>
     </section>
 
     <section>
@@ -269,5 +320,6 @@
 
 </body>
 <script src="scripts.js"></script>
+<script src="reveal.js " defer></script>
 
 </html>
